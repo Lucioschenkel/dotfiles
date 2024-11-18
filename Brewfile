@@ -1,6 +1,7 @@
 tap "homebrew/bundle"
 tap "nikitabobko/tap"
 brew "gh"
+brew "lazygit"
 brew "pure"
 brew "stow"
 brew "tmux"
