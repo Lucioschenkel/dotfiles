@@ -1,4 +1,6 @@
 tap "homebrew/bundle"
+tap "nikitabobko/tap"
 brew "pure"
 brew "stow"
+cask "aerospace"
 cask "wezterm"
