@@ -23,8 +23,19 @@ set expandtab
 set shiftwidth=2
 set tabstop=2
 
+" Set relative line numbers
+set rnu 
+
+" --- START Key bindings 
+
 " Map jj to esc
 inoremap jj <esc>
 
-" Set relative line numbers
-set rnu 
+" Set space as the leader key
+let mapleader = " "
+
+nnoremap <leader>\ :nohlsearch<CR>
+
+" --- END Key bindings
+
+
