@@ -1,5 +1,6 @@
 tap "homebrew/bundle"
 tap "nikitabobko/tap"
+brew "gh"
 brew "pure"
 brew "stow"
 cask "aerospace"
