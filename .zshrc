@@ -1,6 +1,7 @@
 # History
-HISTFILE=.history
-HISTSIZE=10000
+HISTFILE=$HOME/.history
+HISTSIZE=10000000
+SAVEHIST=10000000
 
 # Search history with up and down keys
 autoload -U up-line-or-beginning-search
@@ -19,11 +20,10 @@ fpath+=("$(brew --prefix)/share/zsh/site-functions")
 autoload -U promptinit; promptinit
 prompt pure
 
+# fzf integration
+source <(fzf --zsh)
+
 # SSH
 eval $(ssh-agent)
 ssh-add ~/.ssh/id_ed25519
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
