@@ -19,12 +19,28 @@ set hlsearch
 " Use spaces instead of tab
 set expandtab
 
+" Disable swap file: that annoying .swp file created whenever you open a file
+" in vim
+set noswapfile
+
 " Set shift width and tab size to 2
 set shiftwidth=2
 set tabstop=2
 
 " Set relative line numbers
 set rnu 
+
+" Use new regular expression engine
+set re=0
+
+" fzf
+if has('mac')
+  " If installed using Homebrew on Apple Silicon
+  set rtp+=/opt/homebrew/opt/fzf
+else
+  " If installed using Homebrew
+  set rtp+=/usr/local/opt/fzf
+endif
 
 " --- START Key bindings 
 
@@ -34,7 +50,11 @@ inoremap jj <esc>
 " Set space as the leader key
 let mapleader = " "
 
+" Unhighlight search with leader + back slash
 nnoremap <leader>\ :nohlsearch<CR>
+
+" Open FZF with <leader>space
+nnoremap <leader><space> :FZF<CR>
 
 " --- END Key bindings
 
