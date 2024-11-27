@@ -10,7 +10,7 @@ I create this repo to track changes to my dotfiles. The goal is to be able to pu
 
 # Setup
 
-I've configured by local environment using [GNU Stow](https://www.gnu.org/software/stow/stow.html). I'm using the default behavior which is to symlink files up one directory. To get started on a new system, follow these steps:
+I've configured my local environment using [GNU Stow](https://www.gnu.org/software/stow/stow.html). I'm using the default behavior which is to symlink files up one directory. To get started on a new system, follow these steps:
 
 ```shell
 git clone git@github.com:Lucioschenkel/dotfiles.git ~/dotfiles
