@@ -1,2 +1,3 @@
 alias gst="git status"
 alias k="kubectl"
+alias v="nvim"
