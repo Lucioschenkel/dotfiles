@@ -33,6 +33,9 @@ set rnu
 " Use new regular expression engine
 set re=0
 
+" Highlight cursor column
+set cursorcolumn
+
 " fzf
 if has('mac')
   " If installed using Homebrew on Apple Silicon
