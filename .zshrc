@@ -22,6 +22,10 @@ set -o vi
 export EDITOR=nvim
 export BROWSER="vivaldi"
 
+if [[ "$OSTYPE" == linux* ]]; then
+  export PATH=$PATH:/home/linuxbrew/.linuxbrew/opt
+fi
+
 # -------------- Aliases -------------
 
 # Git
@@ -44,8 +48,10 @@ else
   fpath+=($HOME/.zsh/pure)
 fi
 
-autoload -U promptinit; promptinit
-prompt pure
+if [[ -o interactive ]]; then
+	autoload -U promptinit; promptinit
+	prompt pure
+fi
 
 # ------------ Completions --------------
 
@@ -56,7 +62,7 @@ fi
 fpath+=~/.zfunc
 
 if type brew &>/dev/null; then
-    FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
 fi
 
 autoload -Uz compinit
@@ -65,6 +71,10 @@ compinit -u
 zstyle ':completion:*' menu select
 
 # -------------- Sourcing ---------------
+
+if [[ "$OSTYPE" == linux* ]];
+  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
 
 source <(fzf --zsh)
 eval "$(direnv hook zsh)"
