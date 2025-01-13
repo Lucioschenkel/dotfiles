@@ -72,10 +72,6 @@ zstyle ':completion:*' menu select
 
 # -------------- Sourcing ---------------
 
-if [[ "$OSTYPE" == linux* ]]; then
-  eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-fi
-
 source <(fzf --zsh)
 eval "$(direnv hook zsh)"
 
