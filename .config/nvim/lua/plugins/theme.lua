@@ -1,12 +1,8 @@
 return {
-  -- add rose-pine
-  { "shaunsingh/nord.nvim" },
-
-  -- Configure LazyVim to load rose-pine
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "nord",
-    },
+  "folke/tokyonight.nvim",
+  lazy = false,
+  priority = 1000,
+  opts = {
+    style = "night",
   },
 }
