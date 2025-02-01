@@ -1,3 +1,13 @@
+" Vim plug
+call plug#begin()
+
+Plug 'nvim-lua/plenary.nvim'
+Plug 'junegunn/fzf.vim'                " Enhanced fzf integration (you already have fzf)
+Plug 'preservim/nerdtree'              " File explorer sidebar
+Plug 'ctrlpvim/ctrlp.vim'             " Fuzzy file finder
+
+call plug#end()
+
 " Disable compatibility with legacy vi
 set nocompatible
 
@@ -29,12 +39,12 @@ set tabstop=2
 
 " Set relative line numbers
 set rnu 
-
+set number
 " Use new regular expression engine
 set re=0
 
 " Highlight cursor column
-set cursorcolumn
+" set cursorcolumn
 
 " fzf
 if has('mac')
@@ -60,5 +70,3 @@ nnoremap <leader>\ :nohlsearch<CR>
 nnoremap <leader><space> :FZF<CR>
 
 " --- END Key bindings
-
-
