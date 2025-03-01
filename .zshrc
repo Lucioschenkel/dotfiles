@@ -20,7 +20,6 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 set -o vi
 
 export EDITOR=nvim
-export BROWSER="vivaldi"
 
 if [[ "$OSTYPE" == linux* ]]; then
   export PATH=$PATH:/home/linuxbrew/.linuxbrew/opt
