@@ -1,3 +1,5 @@
 font-size=18
-theme=tokyonight_night
-window-padding-x=10
+theme=IR_Black
+macos-titlebar-style=tabs
+# cursor-style-blink=true
+# cursor-style=bar
