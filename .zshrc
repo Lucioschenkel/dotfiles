@@ -75,3 +75,8 @@ source <(fzf --zsh)
 eval "$(direnv hook zsh)"
 
 fpath+=~/.zfunc; autoload -Uz compinit; compinit
+
+# Rancher desktop
+if [ -d "$HOME/.rd" ]; then
+  export PATH="$HOME/.rd/bin:$PATH"
+fi
