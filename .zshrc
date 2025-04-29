@@ -81,6 +81,14 @@ if [ -d "$HOME/.rd" ]; then
   export PATH="$HOME/.rd/bin:$PATH"
 fi
 
+# Added by LM Studio CLI (lms)
+if [ -d "$HOME/.cache/lm-studio" ]; then
+  export PATH="$PATH:$HOME/.cache/lm-studio/bin"
+fi
+# End of LM Studio CLI section
+
 # Load zsh plugins
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+
