@@ -6,7 +6,6 @@ I created this repo to track changes to my dotfiles. The goal is to be able to c
 
 - [Git](https://git-scm.com/)
 - [Homebrew](https://brew.sh/)
-- [Vim](https://www.vim.org/)
 
 # Setup
 
