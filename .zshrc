@@ -80,3 +80,4 @@ fpath+=~/.zfunc; autoload -Uz compinit; compinit
 if [ -d "$HOME/.rd" ]; then
   export PATH="$HOME/.rd/bin:$PATH"
 fi
+
