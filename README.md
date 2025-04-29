@@ -1,6 +1,6 @@
 # Intro
 
-I create this repo to track changes to my dotfiles. The goal is to be able to pull this on a new system and get to work as quickly as possible. Currently, this setup relies on Homebrew as its package manager and the only supported host is MacOS. I plan on adding support to any Unix-like system in the near future.
+I created this repo to track changes to my dotfiles. The goal is to be able to clone the repo on a new system and get to work as quickly as possible. Currently, this setup relies on Homebrew as its package manager and the only supported host is MacOS. I plan on adding support to any Unix-like system in the future.
 
 # Pre-requistes
 
