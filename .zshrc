@@ -81,3 +81,6 @@ if [ -d "$HOME/.rd" ]; then
   export PATH="$HOME/.rd/bin:$PATH"
 fi
 
+# Load zsh plugins
+source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
