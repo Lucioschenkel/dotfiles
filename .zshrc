@@ -87,6 +87,9 @@ if [ -d "$HOME/.cache/lm-studio" ]; then
 fi
 # End of LM Studio CLI section
 
+# darwin-rebuild
+export PATH="/run/current-system/sw/bin:$PATH"
+
 # Load zsh plugins
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
