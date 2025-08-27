@@ -1,12 +1,10 @@
--- Lua
-
 return {
-  { "dasupradyumna/midnight.nvim", lazy = false, priority = 1000 },
-  -- Configure LazyVim to load midnight
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "midnight",
+  "folke/tokyonight.nvim",
+  opts = {
+    transparent = true,
+    styles = {
+      sidebars = "transparent",
+      floats = "transparent",
     },
   },
 }
