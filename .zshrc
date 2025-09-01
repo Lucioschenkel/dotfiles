@@ -47,11 +47,6 @@ else
   fpath+=($HOME/.zsh/pure)
 fi
 
-if [[ -o interactive ]]; then
-	autoload -U promptinit; promptinit
-	prompt pure
-fi
-
 # ------------ Completions --------------
 
 if [ ! -d ~/.zfunc ]; then
@@ -93,3 +88,6 @@ export PATH="/run/current-system/sw/bin:$PATH"
 # Load zsh plugins
 source "$(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 source "$(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
+
+# Oh-my-posh
+eval "$(oh-my-posh init zsh --config ~/.config/oh-my-posh/.ls.omp.json)"
