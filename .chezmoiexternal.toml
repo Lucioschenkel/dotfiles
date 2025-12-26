@@ -1,0 +1,9 @@
+[".config/nvim"]
+    type = "git-repo"
+    url = "https://github.com/Lucioschenkel/kickstart.nvim.git"
+    refreshPeriod = "168h"
+["repos/Lucioschenkel/github.com/ai-agent-python"]
+    type = "git-repo"
+    url = "https://github.com/Lucioschenkel/ai-agent-python.git"
+    refreshPeriod = "168h"
+
