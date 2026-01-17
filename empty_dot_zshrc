@@ -53,6 +53,8 @@ zstyle ':completion:*' menu select
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+eval "$(direnv hook zsh)"
+
 # Load pure prompt --- #
 autoload -U promptinit; promptinit
 prompt pure
