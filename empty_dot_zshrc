@@ -1,9 +1,14 @@
 # --- Env vars --- #
 export EDITOR="nvim"
+# Used by gh dash extension
+export GH_DASH_CONFIG="$HOME/.config/gh-dash.yaml"
+
+source "${HOME}/.zshenv"
 
 alias v="nvim"
 alias gst="git status"
 alias ll="lsd -al"
+alias k="kubectl"
 
 # --- pnpm --- #
 export PNPM_HOME="$HOME/Library/pnpm"
@@ -11,6 +16,24 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+# --- ghcup --- #
+export PATH="$HOME/.ghcup/bin:$PATH"
+
+# -- go -- #
+export PATH="$PATH:$HOME/go/bin"
+
+# -- rustup -- #
+export PATH="$PATH:$(brew --prefix)/opt/rustup/bin"
+
+# -- Rancher Desktop -- #
+export PATH="$PATH:$HOME/.rd/bin"
+
+# Herd injected PHP 8.4 configuration.
+export HERD_PHP_84_INI_SCAN_DIR="$HOME/Library/Application Support/Herd/config/php/84/"
+
+# Herd injected PHP binary.
+export PATH="$HOME/Library/Application Support/Herd/bin/:$PATH"
 
 set -o vi # Use vim keybindings
 
@@ -54,7 +77,7 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # --- Vega CLI --- #
-source "${HOME}/lucio/vega/env"
+source "${HOME}/vega/env"
 
 eval "$(direnv hook zsh)"
 
