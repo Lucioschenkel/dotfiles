@@ -79,10 +79,17 @@ zstyle ':completion:*' menu select
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# --- Kubectl completions --- #
+source <(kubectl completion zsh)
+
 # --- Vega CLI --- #
 source "${HOME}/vega/env"
 
+# --- direnv shell ingeration --- #
 eval "$(direnv hook zsh)"
+
+# --- worktrunk shell integration --- #
+if command -v wt >/dev/null 2>&1; then eval "$(command wt config shell init zsh)"; fi
 
 # Load pure prompt --- #
 autoload -U promptinit; promptinit
