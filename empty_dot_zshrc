@@ -5,10 +5,10 @@ export GH_DASH_CONFIG="$HOME/.config/gh-dash.yaml"
 
 source "${HOME}/.zshenv"
 
-alias v="nvim"
 alias gst="git status"
-alias ll="lsd -al"
 alias k="kubectl"
+alias ls="lsd -al"
+alias v="nvim"
 
 # --- pnpm --- #
 export PNPM_HOME="$HOME/Library/pnpm"
